@@ -4,6 +4,30 @@
              xmlns:local="clr-namespace:train"
              StartupUri="Main.xaml">
     <Application.Resources>
-         
+        <Style x:Key="kopochki" TargetType="Button">
+            <Setter Property="Background" Value="#f02a53"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Comic Sans"/>
+        </Style>
+
+        <Style x:Key="okno" TargetType="Grid">
+            <Setter Property="Background" Value="#d7e7f5"/>
+        </Style>
+
+        <Style x:Key="vod" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Comic Sans"/>
+        </Style>
+
+        <Style x:Key="vod_text" TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Comic Sans"/>
+        </Style>
+
+        <Style x:Key="header" TargetType="StackPanel">
+            <Setter Property="Background" Value="#4db2d8"/>
+            
+        </Style>
     </Application.Resources>
 </Application>
