@@ -1,0 +1,7 @@
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\App.csproj.AssemblyReference.cache
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\App.csproj.SuggestedBindingRedirects.cache
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\Main.g.cs
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\App.g.cs
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\App_Content.g.cs
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\App_MarkupCompile.cache
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\App\App\obj\Debug\App_MarkupCompile.lref
