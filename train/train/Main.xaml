@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:train"
         mc:Ignorable="d"
-        Title="Main" MinHeight="310" MinWidth="468" Icon="/resourses/logo-full.png" >
+        Title="Main" Height="310" Width="457" ResizeMode="NoResize" Icon="/resourses/logo-full.png" >
 
-    <Grid Style="{DynamicResource okno}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="48*"/>
-            <RowDefinition Height="69*"/>
-            <RowDefinition Height="38*"/>
-        </Grid.RowDefinitions>
-        
+    <Grid Style="{DynamicResource okno}"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48*"/>
+                <RowDefinition Height="69*"/>
+                <RowDefinition Height="38*"/>
+            </Grid.RowDefinitions>
+
             <StackPanel Orientation="Horizontal" Style="{DynamicResource header}">
-            
+
                 <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left">
                     <Image Source="/resourses/logo-full.png" Height="23" Width="61" Margin="10 0 0 0"/>
                 </StackPanel>
@@ -24,21 +24,21 @@
                     <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20"/>
                     <TextBlock Text="Введите логин и пароль"/>
                 </StackPanel>
-           
-        </StackPanel>
-        
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Height="58" VerticalAlignment="Center" Grid.Row="1" Width="176">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Логин:" Width="60" Style="{DynamicResource vod}"/>
-                <TextBox x:Name="log" Width="115" Style="{DynamicResource vod_text}"/>
-            </StackPanel>
-            <StackPanel Height="10"/>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Пароль:" Width="60" Style="{DynamicResource vod}"/>
-                <PasswordBox x:Name="pas" Width="115" FontSize="15" KeyDown="pas_KeyDown"/>
-            </StackPanel>
-        </StackPanel>
-        <Button Grid.Row="2" Style="{DynamicResource kopochki}" VerticalAlignment="Center" Content="Войти" HorizontalAlignment="Center" Width="100" Height="24" Click="Button_Click"/>
-    </Grid>
 
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Height="58" VerticalAlignment="Center" Grid.Row="1" Width="176">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Логин:" Width="60" Style="{DynamicResource vod}"/>
+                    <TextBox x:Name="log" Width="115" Style="{DynamicResource vod_text}"/>
+                </StackPanel>
+                <StackPanel Height="10"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Пароль:" Width="60" Style="{DynamicResource vod}"/>
+                    <PasswordBox x:Name="pas" Width="115" FontSize="15" KeyDown="pas_KeyDown"/>
+                </StackPanel>
+            </StackPanel>
+            <Button Grid.Row="2" Style="{DynamicResource kopochki}" VerticalAlignment="Center" Content="Войти" HorizontalAlignment="Center" Width="102" Height="24" Click="Button_Click"/>
+        </Grid>
+    
 </Window>
