@@ -33,6 +33,13 @@ namespace train
             xar.Items.Add("установка оборудования");
             xar.Items.Add("техническое обслуживание и сопровождение");
             til.Text = "Добавление задачи";
+            var m = Main.user.Manager;
+            if (m != null)
+            {
+                FIO_Is.Visibility = Visibility.Visible;
+                fio_i.Visibility = Visibility.Visible;
+            }
+            
         }
 
         public void Init(Task task)
@@ -85,7 +92,16 @@ namespace train
             
             task.Difficulty = double.Parse(slog.Text);
             task.Time = int.Parse(vremy.Text);
-            task.Executor = ((User)FIO_Is.SelectedItem).Executor;
+            
+            if (Main.user.Manager == null)
+            {
+                task.Executor = Main.user.Executor;
+            }
+            else
+            {
+                task.Executor = ((User)FIO_Is.SelectedItem).Executor;
+            }
+            
 
             task.Status = statys.Text;
             task.WorkType = xar.Text;

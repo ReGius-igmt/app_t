@@ -5,28 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:train"
         mc:Ignorable="d"
-        Title="Main_task" MinHeight="450" MinWidth="800" Icon="/resourses/logo-smoll.png">
-    <Viewbox>
-        <Grid Height="450" Width="800">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="5*"/>
-        </Grid.RowDefinitions>
-        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="88">
-                <Image Source="/resourses/logo-full.png" Height="68" Width="185" Margin="10 0 0 0"/>
-            <TextBlock Width="20"/>
-            <TextBlock Name="til" FontSize="40" VerticalAlignment="Center" Height="68"/>
-            <TextBlock Width="20"/>
-            
-            <StackPanel Name="soz" Orientation="Vertical" VerticalAlignment="Center" Height="72" Width="96">
-                <Button Content="Выход" Click="Button_Click" Margin="0 0 0 5"/>
-                <Button x:Name="Pol" Content="Пользователи" Margin="0 0 0 5" Visibility="Collapsed" Click="Pol_Click"/>
-                <Button x:Name="add_z" Content="Создать задачу"  Visibility="Collapsed" Click="add_z_Click"/>
-            </StackPanel>
-        </StackPanel>
+        Title="Main_task" Height="536" Width="1021" ResizeMode="NoResize" Icon="/resourses/logo-smoll.png">
 
-        <ListBox x:Name="show_task" Grid.Row="1" MouseDoubleClick="show_task_MouseDoubleClick">
-           <ListBox.ItemTemplate>
+    <Grid Style="{DynamicResource okno}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="405*"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="141" Style="{DynamicResource header}">
+            <Image Source="/resourses/logo-full.png" Height="68" Width="100" Margin="10 0 5 0"/>
+            <TextBlock Name="til" FontSize="40" VerticalAlignment="Center" Height="68" Margin="0 0 20 0"/>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="name_pole" Style="{DynamicResource vod}"  />
+                <TextBlock x:Name="name_isp" Style="{DynamicResource vod}" Visibility="Collapsed" />
+                <ComboBox x:Name="vib_isp" Visibility="Collapsed" Width="250" SelectionChanged="vib_isp_SelectionChanged"/>
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Name="soz" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Height="81" Width="130">
+            <Button Content="Выход" Click="Button_Click" Margin="0 0 0 5" Style="{DynamicResource kopochki}"/>
+            <Button x:Name="Pol" Content="Пользователи" Margin="0 0 0 5" Visibility="Collapsed" Click="Pol_Click" Style="{DynamicResource kopochki}"/>
+            <Button x:Name="add_z" Content="Создать задачу"  Click="add_z_Click" Style="{DynamicResource kopochki}"/>
+        </StackPanel>
+        <TextBlock x:Name="block" Margin="0 0 10 0" Text="Время до блокировки: 30 минут" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{DynamicResource vod}"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15">
+            <TextBlock Text="Статус задачи " Style="{DynamicResource vod}"/>
+            <ComboBox x:Name="stat" Width="150" SelectionChanged="stat_SelectionChanged"/>
+        </StackPanel>
+            <ListBox x:Name="show_task" MouseDoubleClick="show_task_MouseDoubleClick" Background="Transparent" ScrollViewer.CanContentScroll="False" Grid.Row="1" Margin="0,50,0,0">
+            <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
                         <TextBlock Text="{Binding Path=Title}" HorizontalAlignment="Center" FontSize="20"/>
@@ -41,11 +48,11 @@
                                 <TextBlock Text="{Binding Path=Executor.Manager.User}"/>
                             </StackPanel>
                         </StackPanel>
-                            <Button x:Name="rem" Content="Удалить запись" HorizontalAlignment="Left" FontSize="15" VerticalAlignment="Center" Click="rem_Click"/>
-                        </StackPanel>
+                        <Button x:Name="rem" Content="Удалить запись" HorizontalAlignment="Left" FontSize="15" VerticalAlignment="Center" Click="rem_Click"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
     </Grid>
-    </Viewbox>
+
 </Window>

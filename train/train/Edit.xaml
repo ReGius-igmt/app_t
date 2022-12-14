@@ -25,20 +25,20 @@
                 <TextBlock Text="Дата выполнения:" Margin="0 0 0 5 " Height="20"/>
                 <TextBlock Text="Сложность задачи:" Margin="0 0 0 5 " Height="20"/>
                 <TextBlock Text="Время выполнения задачи:" Margin="0 0 0 5 " Height="20"/>
-                <TextBlock Text="ФИО исполнителя:" Margin="0 0 0 5 " Height="20"/>
+                <TextBlock x:Name="fio_i" Text="ФИО исполнителя:" Visibility="Collapsed" Margin="0 0 0 5 " Height="20"/>
                 <TextBlock Text="Статус:" Margin="0 0 0 5 " Height="20"/>
                 <TextBlock Text="Характер задачи:" Margin="0 0 0 5 " Height="20"/>
 
             </StackPanel>
             <StackPanel Width="20"/>
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Height="242" Width="300">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center"  Height="222" Width="300">
                 <TextBox x:Name="naz" Margin="0 0 0 5" Height="20"/>
                 <TextBox x:Name="dir" Margin="0 0 0 5" Height="20"/>
                 <TextBox x:Name="srok_is" Margin="0 0 0 5" Height="20"/>
                 <TextBox x:Name="dat_vip" Margin="0 0 0 5" Height="20"/>
                 <TextBox x:Name="slog" Margin="0 0 0 5" Height="20"/>
                 <TextBox x:Name="vremy" Margin="0 0 0 5" Height="20"/>
-                <ComboBox x:Name="FIO_Is" Margin="0 0 0 5" Height="25"/>
+                <ComboBox x:Name="FIO_Is" Visibility="Collapsed" Margin="0 0 0 5" Height="25"/>
                 <ComboBox x:Name="statys" Margin="0 0 0 5" Height="25" />
 
 

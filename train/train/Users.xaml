@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:train"
         mc:Ignorable="d"
-        Title="Users" MinHeight="450" MinWidth="800" Icon="/resourses/logo-smoll.ico">
-    <Viewbox>
-        <Grid Height="450" Width="800">
+        Title="Users" Height="450" Width="773" Icon="/resourses/logo-smoll.ico" >
+    
+        <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="5*"/>
+                <RowDefinition Height="58*"/>
+                <RowDefinition Height="167*"/>
             </Grid.RowDefinitions>
-            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="88">
-                <Image Source="/resourses/logo-full.png" Height="68" Width="185" Margin="10 0 0 0"/>
-                <TextBlock Width="90"/>
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="112">
+                <Image Source="/resourses/logo-full.png" Height="68" Width="132" Margin="10 0 0 0"/>
+                <TextBlock Width="71"/>
                 <TextBlock Name="til" Text="Исполнители" FontSize="40" VerticalAlignment="Center" Height="68"/>
-                <TextBlock Width="100"/>
-            
-            <StackPanel Name="soz" Orientation="Vertical" VerticalAlignment="Center" Height="72" Width="96">
-                    <Button Content="Выход" Margin="0 0 0 20" Click="Button_Click"/>
-                    <Button x:Name="add_z" Content="Создать задачу" Click="add_z_Click"/>
+                <TextBlock Width="55"/>
+
+                <StackPanel Name="soz" Orientation="Vertical" VerticalAlignment="Center" Height="88" Width="230">
+                    <Button Content="Выход" Margin="0 0 0 5" Click="Button_Click" Style="{DynamicResource kopochki}"/>
+                    <Button x:Name="add_z" Content="Создать задачу" Margin="0 0 0 5" Click="add_z_Click" Style="{DynamicResource kopochki}"/>
+                    <Button x:Name="kef" Content="Управление коэффицентами" Click="kef_Click" Style="{DynamicResource kopochki}"/>
                 </StackPanel>
             </StackPanel>
 
@@ -51,5 +52,5 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </Grid>
-    </Viewbox>
+    
 </Window>

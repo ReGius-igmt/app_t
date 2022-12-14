@@ -1,0 +1,22 @@
+﻿<Window x:Class="train.koefficent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:train"
+        mc:Ignorable="d"
+        Title="koefficent" Height="450" Width="800">
+    <Grid Height="450" Width="800">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="97" Style="{DynamicResource header}">
+            <Image Source="/resourses/logo-full.png" Height="68" Width="100" Margin="10 0 5 0"/>
+            <TextBlock Name="til" Text="Управление коэффицентами" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center" Height="83" Margin="0 0 30 0" Width="230"/>
+            <TextBlock Text="Выбор исполнителя: " Style="{DynamicResource vod}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <ComboBox x:Name="vib_isp" Width="250" SelectionChanged="vib_isp_SelectionChanged" Height="27"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

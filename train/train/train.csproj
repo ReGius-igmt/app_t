@@ -73,6 +73,9 @@
     <Compile Include="Executor.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="koefficent.xaml.cs">
+      <DependentUpon>koefficent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Main_task.xaml.cs">
       <DependentUpon>Main_task.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Edit_pol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="koefficent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

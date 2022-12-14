@@ -25,7 +25,7 @@ namespace train
         {
             InitializeComponent();
             show_user.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.Where(i => i.User.IsDeleted == false).ToList();
-            var g = z4_train_MihailovaEntities.getContext().Executor;
+            var g = z4_train_MihailovaEntities.getContext().Executor.Where(i => i.User.IsDeleted == false);
 
             foreach (var a in g)
             {
@@ -51,7 +51,7 @@ namespace train
             var m = new Edit_pol();
             
             m.ShowDialog();
-            show_user.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.ToList();
+            show_user.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.Where(g => g.User.IsDeleted == false).ToList();
             
             
         }
@@ -67,7 +67,13 @@ namespace train
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new Main_task().Show();
+            
+            Close();
+        }
+
+        private void kef_Click(object sender, RoutedEventArgs e)
+        {
+            new koefficent().Show();
             Close();
         }
     }

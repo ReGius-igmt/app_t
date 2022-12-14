@@ -46,8 +46,8 @@ namespace train
                 str.Append(i.ToString("x2"));
             }
             var f = str.ToString();
-            log.Text = f;
-
+            
+            
             if (u.Password == f)
             {
                 user = u;

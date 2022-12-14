@@ -62,6 +62,7 @@ namespace train
             executor.Grade = greyd.Text;
             executor.Manager = ((User)men.SelectedItem).Manager;
             executor.User.Login = login.Text;
+            
             if (password.Text != "")
             { 
                 executor.User.Password = password.Text; 
@@ -71,6 +72,7 @@ namespace train
 
             if (executor.ID < 1)
             {
+                executor.User.IsDeleted = false;
                 z4_train_MihailovaEntities.getContext().Executor.Add(executor);
                 MessageBox.Show("Пользоветаль добавлена");
             }

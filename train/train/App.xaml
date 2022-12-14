@@ -11,8 +11,8 @@
             <Setter Property="FontFamily" Value="Comic Sans"/>
         </Style>
 
-        <Style x:Key="okno" TargetType="Grid">
-            <Setter Property="Background" Value="#d7e7f5"/>
+        <Style x:Key="okno" >
+            <Setter Property="Control.Background" Value="#d7e7f5"/>
         </Style>
 
         <Style x:Key="vod" TargetType="TextBlock">

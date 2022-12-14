@@ -88,3 +88,5 @@ C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\tr
 C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\train.exe
 C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\train.pdb
 C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\App.baml
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\koefficent.g.cs
+C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\koefficent.baml
