@@ -90,3 +90,37 @@ C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\tr
 C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\App.baml
 C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\koefficent.g.cs
 C:\Users\imnv9\Desktop\демоэкзамен\Вариант 7 экзамен\train\train\obj\Debug\koefficent.baml
+C:\projects\C#\app_t\train\train\bin\Debug\train.exe.config
+C:\projects\C#\app_t\train\train\bin\Debug\train.exe
+C:\projects\C#\app_t\train\train\bin\Debug\train.pdb
+C:\projects\C#\app_t\train\train\bin\Debug\EntityFramework.dll
+C:\projects\C#\app_t\train\train\bin\Debug\EntityFramework.SqlServer.dll
+C:\projects\C#\app_t\train\train\bin\Debug\EntityFramework.xml
+C:\projects\C#\app_t\train\train\bin\Debug\EntityFramework.SqlServer.xml
+C:\projects\C#\app_t\train\train\bin\Debug\ru\EntityFramework.resources.dll
+C:\projects\C#\app_t\train\train\obj\Debug\train.csproj.AssemblyReference.cache
+C:\projects\C#\app_t\train\train\obj\Debug\train.csproj.SuggestedBindingRedirects.cache
+C:\projects\C#\app_t\train\train\obj\Debug\Edit.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\Edit_pol.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\koefficent.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\Main.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\Main_task.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\Users.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\App.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\train_Content.g.cs
+C:\projects\C#\app_t\train\train\obj\Debug\train_MarkupCompile.cache
+C:\projects\C#\app_t\train\train\obj\Debug\train_MarkupCompile.lref
+C:\projects\C#\app_t\train\train\obj\Debug\App.baml
+C:\projects\C#\app_t\train\train\obj\Debug\Edit.baml
+C:\projects\C#\app_t\train\train\obj\Debug\Edit_pol.baml
+C:\projects\C#\app_t\train\train\obj\Debug\koefficent.baml
+C:\projects\C#\app_t\train\train\obj\Debug\Main.baml
+C:\projects\C#\app_t\train\train\obj\Debug\Main_task.baml
+C:\projects\C#\app_t\train\train\obj\Debug\Users.baml
+C:\projects\C#\app_t\train\train\obj\Debug\train.g.resources
+C:\projects\C#\app_t\train\train\obj\Debug\train.Properties.Resources.resources
+C:\projects\C#\app_t\train\train\obj\Debug\train.csproj.GenerateResource.cache
+C:\projects\C#\app_t\train\train\obj\Debug\train.csproj.CoreCompileInputs.cache
+C:\projects\C#\app_t\train\train\obj\Debug\train.csproj.CopyComplete
+C:\projects\C#\app_t\train\train\obj\Debug\train.exe
+C:\projects\C#\app_t\train\train\obj\Debug\train.pdb

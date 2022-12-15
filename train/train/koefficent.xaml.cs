@@ -22,12 +22,20 @@ namespace train
         public koefficent()
         {
             InitializeComponent();
-            vib_isp.ItemsSource = z4_train_MihailovaEntities.getContext().User.Where(a=>a.IsDeleted == false).ToList();
+            vib_isp.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.Where(a =>a.User.IsDeleted == false).Prepend(new Executor() { User = new User() { FirstName = "Все исполнители" } });
+            vib_isp.SelectedIndex = 0;
+            show_kef.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.Where(g => g.User.IsDeleted == false).ToList();
         }
 
         private void vib_isp_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new Users().Show();
+            Close();
         }
     }
 }

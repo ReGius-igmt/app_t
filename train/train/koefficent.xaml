@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:train"
         mc:Ignorable="d"
-        Title="koefficent" Height="450" Width="800">
-    <Grid Height="450" Width="800">
+        Title="koefficent" Height="450" Width="916">
+    <Grid Width="916" Margin="0,0,0,-6">
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="11*"/>
@@ -16,7 +16,21 @@
             <TextBlock Name="til" Text="Управление коэффицентами" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center" Height="83" Margin="0 0 30 0" Width="230"/>
             <TextBlock Text="Выбор исполнителя: " Style="{DynamicResource vod}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             <ComboBox x:Name="vib_isp" Width="250" SelectionChanged="vib_isp_SelectionChanged" Height="27"/>
-
         </StackPanel>
+        <Button Content="Выход" Style="{DynamicResource kopochki}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0" Height="33" Click="Button_Click" Width="62" />
+        <ListBox x:Name="show_kef" Style="{DynamicResource okno}" Grid.Row="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Style="{DynamicResource vod}" Text="{Binding Path=User}"/>
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Гарантированый минимум ЗП: " Style="{DynamicResource vod}"/>
+                            <TextBlock Text="{Binding Path=}" Style="{DynamicResource vod}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
+ 

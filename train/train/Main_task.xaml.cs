@@ -50,7 +50,7 @@ namespace train
             {
                 name_pole.Text = "Выбор исполнителя";
                 vib_isp.Visibility = Visibility.Visible;
-                vib_isp.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.Where(a => a.ManagerID == Main.user.ID).Prepend(new Executor() { User = new User() { FirstName = "Все исполнители" } });
+                vib_isp.ItemsSource = z4_train_MihailovaEntities.getContext().Executor.Where(a => a.ManagerID == Main.user.ID && a.User.IsDeleted == false).Prepend(new Executor() { User = new User() { FirstName = "Все исполнители" } });
                 vib_isp.SelectedIndex = 0;
                 til.Text = "Управление задачами";
                 Pol.Visibility = Visibility.Visible;
